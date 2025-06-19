@@ -1,0 +1,117 @@
+{
+  "assignment": {
+    "title": "Citáty",
+    "content": "<p style=\"font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\">Úkolem je vytvořit program, který bude zobrazovat vybrané citáty.<\/span><\/p>\n<p style=\"font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\">Vstupem programu je jedno celé číslo. Toto číslo je z rozsahu 0 až 8 a určuje citát, který má být zobrazen.<\/span><\/p>\n<p style=\"font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\">Výstupem programu je citát odpovídající zadanému číslu na vstupu. Citáty odpovídající jednotlivým číslům jsou uvedené v ukázkových bězích programu níže. Pozor, za textem citátu je odřádkování (\\n).<\/span><\/p>\n<p style=\"font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\">Pokud je vstup neplatný, program to musí detekovat a zobrazit chybové hlášení. Chybové hlášení zobrazujte na standardní výstup (ne na chybový výstup). Za chybu považujte:<\/span><\/p>\n<ul style=\"font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\">\n <li><span style=\"background-color: rgb(255, 255, 255);\">ze vstupu nelze přečíst celé číslo,<\/span><\/li>\n <li><span style=\"background-color: rgb(255, 255, 255);\">číslo přečtené ze vstupu je mimo interval 0 až 8.<\/span><\/li>\n<\/ul>\n<p style=\"font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\">Povšimněte si, že program zobrazuje různá chybová hlášení. První chybové hlášení se uplatní, pokud program nemůže ze vstupu přečíst platné celé číslo. Druhé chybové hlášení se pak použije, pokud je načtené číslo mimo rozsah (viz ukázka).<\/span><\/p>\n<p style=\"font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\">Při programování si dejte pozor na přesnou podobu výpisů. Výstup Vašeho programu kontroluje stroj, který požaduje přesnou shodu výstupů Vašeho programu s výstupy referenčními. Za chybu je považováno, pokud se výpis liší. I chybějící nebo přebývající mezera/odřádkování je považováno za chybu. Abyste tyto problémy rychle vyloučili, použijte přiložený archiv se sadou vstupních a očekávaných výstupních dat. Podívejte se na videotutoriál (courses -&gt; výuková videa), jak testovací data použít a jak testování zautomatizovat.<\/span><\/p>\n<p style=\"font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\">Váš program bude spouštěn v omezeném testovacím prostředí. Je omezen dobou běhu (limit je vidět v logu referenčního řešení) a dále je omezena i velikost dostupné paměti (ale tato úloha by ani s jedním omezením neměla mít problém). Testovací prostředí dále zakazuje používat některé \"nebezpečné funkce\" -- funkce pro spouštění programu, pro práci se sítí, ... Pokud jsou tyto funkce použité, program se nespustí. Možná ve svém programu používáte volání:<\/span><\/p>\n<pre style=\"font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\">int main ( int argc, char * argv [] )\n{\n \n  ...\n     \n  system ( \"pause\" ); /* aby se nezavrelo okno programu */\n  return 0;\n}\n<\/span><\/pre>\n<p style=\"font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\">Toto nebude v testovacím prostředí fungovat - je zakázáno spouštění jiného programu. (I pokud by se program spustil, byl by odmítnut. Nebyl by totiž nikdo, kdo by pauzu \"odmáčkl\", program by čekal věčně a překročil by tak maximální dobu běhu.) Pokud tedy chcete zachovat pauzu pro testování na Vašem počítači a zároveň chcete mít jistotu, že program poběží správně, použijte následující trik:<\/span><\/p>\n<pre style=\"font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\">int main ( int argc, char * argv [] )\n{\n \n  ...\n\n#ifndef __PROGTEST__\n  system ( \"pause\" ); /* toto progtest \"nevidi\" */\n#endif /* __PROGTEST__ */\n  return 0;\n} \n<\/span><\/pre>\n<p><span style=\"background-color: rgb(255, 255, 255);\"><b style=\"font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\">Ukázka práce programu:<\/b><br style=\"font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><\/span><\/p>\n<hr style=\"height: 0px; border-style: solid; border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-right-width: 0px; border-left-width: 0px; font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\">\n<pre style=\"font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\"><b>ml' nob:<\/b>\n0\n<b>Qapla'<\/b>\n<b>noH QapmeH wo' Qaw'lu'chugh yay chavbe'lu' 'ej wo' choqmeH may' DoHlu'chugh lujbe'lu'.<\/b>\n<\/span><\/pre>\n<hr style=\"height: 0px; border-style: solid; border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-right-width: 0px; border-left-width: 0px; font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\">\n<pre style=\"font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\"><b>ml' nob:<\/b>\n1\n<b>Qapla'<\/b>\n<b>bortaS bIr jablu'DI' reH QaQqu' nay'.<\/b>\n<\/span><\/pre>\n<hr style=\"height: 0px; border-style: solid; border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-right-width: 0px; border-left-width: 0px; font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\">\n<pre style=\"font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\"><b>ml' nob:<\/b>\n2\n<b>Qapla'<\/b>\n<b>Qu' buSHa'chugh SuvwI', batlhHa' vangchugh, qoj matlhHa'chugh, pagh ghaH SuvwI''e'.<\/b>\n<\/span><\/pre>\n<hr style=\"height: 0px; border-style: solid; border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-right-width: 0px; border-left-width: 0px; font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\">\n<pre style=\"font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\"><b>ml' nob:<\/b>\n3\n<b>Qapla'<\/b>\n<b>bISeH'eghlaH'be'chugh latlh Dara'laH'be'.<\/b>\n<\/span><\/pre>\n<hr style=\"height: 0px; border-style: solid; border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-right-width: 0px; border-left-width: 0px; font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\">\n<pre style=\"font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\"><b>ml' nob:<\/b>\n4\n<b>Qapla'<\/b>\n<b>qaStaHvIS wa' ram loS SaD Hugh SIjlaH qetbogh loD.<\/b>\n<\/span><\/pre>\n<hr style=\"height: 0px; border-style: solid; border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-right-width: 0px; border-left-width: 0px; font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\">\n<pre style=\"font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\"><b>ml' nob:<\/b>\n5\n<b>Qapla'<\/b>\n<b>Suvlu'taHvIS yapbe' HoS neH.<\/b>\n<\/span><\/pre>\n<hr style=\"height: 0px; border-style: solid; border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-right-width: 0px; border-left-width: 0px; font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\">\n<pre style=\"font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\"><b>ml' nob:<\/b>\n6\n<b>Qapla'<\/b>\n<b>Ha'DIbaH DaSop 'e' DaHechbe'chugh yIHoHQo'.<\/b>\n<\/span><\/pre>\n<hr style=\"height: 0px; border-style: solid; border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-right-width: 0px; border-left-width: 0px; font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\">\n<pre style=\"font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\"><b>ml' nob:<\/b>\n007\n<b>Qapla'<\/b>\n<b>Heghlu'meH QaQ jajvam.<\/b>\n<\/span><\/pre>\n<hr style=\"height: 0px; border-style: solid; border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-right-width: 0px; border-left-width: 0px; font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\">\n<pre style=\"font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\"><b>ml' nob:<\/b>\n           8\n<b>Qapla'<\/b>\n<b>leghlaHchu'be'chugh mIn lo'laHbe' taj jej.<\/b>\n<\/span><\/pre>\n<hr style=\"height: 0px; border-style: solid; border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-right-width: 0px; border-left-width: 0px; font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\">\n<pre style=\"font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\"><b>ml' nob:<\/b>\n29\n<b>Qih mi' 29<\/b>\n<\/span><\/pre>\n<hr style=\"height: 0px; border-style: solid; border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-right-width: 0px; border-left-width: 0px; font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\">\n<pre style=\"font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\"><b>ml' nob:<\/b>\n-5\n<b>Qih mi' -5<\/b>\n<\/span><\/pre>\n<hr style=\"height: 0px; border-style: solid; border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-right-width: 0px; border-left-width: 0px; font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\">\n<pre style=\"font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\"><b>ml' nob:<\/b>\nabc\n<b>Neh mi'<\/b>\n<\/span><\/pre>\n<hr style=\"height: 0px; border-style: solid; border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-right-width: 0px; border-left-width: 0px; font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\">\n<p><span style=\"background-color: rgb(255, 255, 255);\"><b style=\"font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\">Poznámky:<\/b><span style=\"font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><\/span><\/span><\/p>\n<ul style=\"font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\">\n <li><span style=\"background-color: rgb(255, 255, 255);\">Ukázkové běhy zachycují očekávané výpisy Vašeho programu (tučné písmo) a vstupy zadané uživatelem (základní písmo). Zvýraznění tučným písmem je použité pouze zde na stránce zadání, aby byl výpis lépe čitelný. Váš program má za úkol pouze zobrazit text bez zvýrazňování (bez HTML markupu).<\/span><\/li>\n <li><span style=\"background-color: rgb(255, 255, 255);\">Znak odřádkování (\\n) je i za poslední řádkou výstupu (i za případným chybovým hlášením).<\/span><\/li>\n <li><span style=\"background-color: rgb(255, 255, 255);\">Výzvy programu a citáty jsou úmyslně zvoleny tak, aby bylo obtížné je ručně opisovat. Úloha se Vás snaží mj. naučit efektivní práci s počítačem, tedy např. s funkcemi copy &amp; paste (které bohužel někteří studenti neznají nebo neumějí použít). Vyzkoušejte si a naučte se copy &amp; paste jak pod Windows tak pod UNIXem (Linuxem), u závěrečného testu se to bude hodit!<\/span><\/li>\n <li><span style=\"background-color: rgb(255, 255, 255);\">Ruční kontrola shody Vašeho a referenčního výstupu je nudná, člověk při porovnávání často přehlédne drobný rozdíl. Obzvláště to platí u textu v úloze, který pro většinu lidí není srozumitelný. Toto je opět záměr. Využijte volna na začátku semestru a naučte se v této jednoduché úloze efektivně testovat Vaše programy. Podívejte se na zmíněný videotutoriál (courses -&gt; výuková videa) a využijte pro porovnání Váš počítač. V dalších úlohách tím ušetříte mnoho času.<\/span><\/li>\n <li><span style=\"background-color: rgb(255, 255, 255);\">Vstup typu&nbsp;<code>1.23<\/code>&nbsp;případně&nbsp;<code>1abcd<\/code>&nbsp;není správný. Jeho ošetření je ale pracnější. Program proto můžete realizovat v jednodušší podobě, která takový vstup akceptuje jako číslo 1. Takový program bude hodnocen nominálním počtem bodů (100 %). Pro zájemce je k dispozici bonusový test, který zkouší zadávat právě tento typ vstupů. Pokud správně ošetříte i tento typ chyb, bude váš program hodnocen body navíc. Ukázka práce programu pro tento typ vstupu:<\/span>\n  <pre><span style=\"background-color: rgb(255, 255, 255);\"><b>ml' nob:<\/b>\n1.23\n<b>bIjatlh 'e' yImev<\/b><\/span><\/pre><\/li>\n<\/ul>",
+    "language": "c",
+    "code_template": "[{\"name\":\"main.c\",\"content\":\"#include <stdio.h>\\n#include <stdlib.h>\\n\\nint main ( int argc, char * argv [] )\\n{\\n  //TO DO:\\n  return 0;\\n}\",\"readonly_ranges\":[]}]",
+    "modal_solution": "[{\"name\":\"main.c\",\"content\":\"#include <stdio.h>\\n#include <stdlib.h>\\n\\nint main ( int argc, char * argv [] )\\n{\\n  printf(\\\"ml' nob:\\\\n\\\");\\n  \\n  char imput[999999];\\n  scanf(\\\"%s\\\", imput);\\n\\n  char *erorr_symbol;\\n  int number;\\n  number = strtol(imput, &erorr_symbol, 10); //imput, proměnná ukazující na konkrétní pozici řady ve slově, soustava na převod\\n  if (erorr_symbol == imput) {\\n    printf(\\\"Neh mi'\\\\n\\\");\\n     return 1;\\n   } else if (*erorr_symbol != '\\\\0') {\\n    printf(\\\"bIjatlh 'e' yImev\\\\n\\\");\\n    return 2;\\n  }\\n\\n  switch (number) {\\n  case 0:\\n    printf(\\\"Qapla'\\\\nnoH QapmeH wo' Qaw'lu'chugh yay chavbe'lu' 'ej wo' choqmeH may' DoHlu'chugh lujbe'lu'.\\\\n\\\");\\n    break;\\n  case 1:\\n    printf(\\\"Qapla'\\\\nbortaS bIr jablu'DI' reH QaQqu' nay'.\\\\n\\\");\\n    break;\\n  case 2:\\n    printf(\\\"Qapla'\\\\nQu' buSHa'chugh SuvwI', batlhHa' vangchugh, qoj matlhHa'chugh, pagh ghaH SuvwI''e'.\\\\n\\\");\\n    break;\\n  case 3:\\n    printf(\\\"Qapla'\\\\nbISeH'eghlaH'be'chugh latlh Dara'laH'be'.\\\\n\\\");\\n    break;\\n  case 4:\\n    printf(\\\"Qapla'\\\\nqaStaHvIS wa' ram loS SaD Hugh SIjlaH qetbogh loD.\\\\n\\\");\\n    break;\\n  case 5:\\n    printf(\\\"Qapla'\\\\nSuvlu'taHvIS yapbe' HoS neH.\\\\n\\\");\\n    break;\\n  case 6:\\n    printf(\\\"Qapla'\\\\nHa'DIbaH DaSop 'e' DaHechbe'chugh yIHoHQo'.\\\\n\\\");\\n    break;\\n  case 7:\\n    printf(\\\"Qapla'\\\\nHeghlu'meH QaQ jajvam.\\\\n\\\");\\n    break;\\n  case 8:\\n    printf(\\\"Qapla'\\\\nleghlaHchu'be'chugh mIn lo'laHbe' taj jej.\\\\n\\\");\\n    break;\\n  default:\\n    printf(\\\"Qih mi' %d\\\\n\\\", number);\\n    return 3;\\n  }\\n  return 0;\\n}\",\"readonly_ranges\":[]}]",
+    "eval_method": "auto_grade",
+    "enable_grade": 1,
+    "enable_late_submission": 1,
+    "enable_auto_mark_complete": null,
+    "editor_copy_paste": 1,
+    "editor_file_upload": 1,
+    "autolock": 0,
+    "testcase_visible": 0,
+    "code_template_readonly_ranges": null,
+    "testcases": [
+      {
+        "input": "0\n",
+        "output": "ml' nob:\nQapla'\nnoH QapmeH wo' Qaw'lu'chugh yay chavbe'lu' 'ej wo' choqmeH may' DoHlu'chugh lujbe'lu'.\n",
+        "name": "testNumber: 0",
+        "match_type": "S",
+        "grade_point": 1,
+        "visibility": 2
+      },
+      {
+        "input": "1\n",
+        "output": "ml' nob:\nQapla'\nbortaS bIr jablu'DI' reH QaQqu' nay'.\n",
+        "name": "testNumber: 1",
+        "match_type": "S",
+        "grade_point": 1,
+        "visibility": 2
+      },
+      {
+        "input": "2\n",
+        "output": "ml' nob:\nQapla'\nQu' buSHa'chugh SuvwI', batlhHa' vangchugh, qoj matlhHa'chugh, pagh ghaH SuvwI''e'.\n",
+        "name": "testNumber: 2",
+        "match_type": "S",
+        "grade_point": 1,
+        "visibility": 2
+      },
+      {
+        "input": "3\n",
+        "output": "ml' nob:\nQapla'\nbISeH'eghlaH'be'chugh latlh Dara'laH'be'.\n",
+        "name": "testNumber: 3",
+        "match_type": "S",
+        "grade_point": 1,
+        "visibility": 2
+      },
+      {
+        "input": "4\n",
+        "output": "ml' nob:\nQapla'\nqaStaHvIS wa' ram loS SaD Hugh SIjlaH qetbogh loD.\n",
+        "name": "testNumber: 4",
+        "match_type": "S",
+        "grade_point": 1,
+        "visibility": 2
+      },
+      {
+        "input": "5\n",
+        "output": "ml' nob:\nQapla'\nSuvlu'taHvIS yapbe' HoS neH.\n",
+        "name": "testNumber: 5",
+        "match_type": "S",
+        "grade_point": 1,
+        "visibility": 2
+      },
+      {
+        "input": "6\n",
+        "output": "ml' nob:\nQapla'\nHa'DIbaH DaSop 'e' DaHechbe'chugh yIHoHQo'.\n",
+        "name": "testNumber: 6",
+        "match_type": "S",
+        "grade_point": 1,
+        "visibility": 2
+      },
+      {
+        "input": "007\n",
+        "output": "ml' nob:\nQapla'\nHeghlu'meH QaQ jajvam.\n",
+        "name": "testNumber: 7",
+        "match_type": "S",
+        "grade_point": 1,
+        "visibility": 2
+      },
+      {
+        "input": "           8\n",
+        "output": "ml' nob:\nQapla'\nleghlaHchu'be'chugh mIn lo'laHbe' taj jej.\n",
+        "name": "testNumber: 8",
+        "match_type": "S",
+        "grade_point": 1,
+        "visibility": 2
+      },
+      {
+        "input": "29\n",
+        "output": "ml' nob:\nQih mi' 29\n",
+        "name": "testNumber: 9",
+        "match_type": "S",
+        "grade_point": 1,
+        "visibility": 2
+      },
+      {
+        "input": "-5\n",
+        "output": "ml' nob:\nQih mi' -5\n",
+        "name": "testNumber: 10",
+        "match_type": "S",
+        "grade_point": 1,
+        "visibility": 2
+      },
+      {
+        "input": "abc\n",
+        "output": "ml' nob:\nNeh mi'\n",
+        "name": "testNumber: 11",
+        "match_type": "S",
+        "grade_point": 1,
+        "visibility": 2
+      }
+    ]
+  },
+  "version": 1
+}

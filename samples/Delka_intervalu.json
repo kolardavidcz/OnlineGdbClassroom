@@ -1,0 +1,93 @@
+{
+  "assignment": {
+    "enable_auto_mark_complete": null,
+    "enable_grade": 1,
+    "testcases": [
+      {
+        "output": "Zadejte cas t1:\nZadejte cas t2:\nDoba:  0:22:33,893\n",
+        "input": "11:45:20,456\n12:07:54,349\n",
+        "grade_point": 1,
+        "visibility": 2,
+        "name": "testNumber: 0",
+        "match_type": "S"
+      },
+      {
+        "output": "Zadejte cas t1:\nZadejte cas t2:\nDoba:  0:00:00,061\n",
+        "input": "15:18:34,232\n15:18:34,293\n",
+        "grade_point": 1,
+        "visibility": 2,
+        "name": "testNumber: 1",
+        "match_type": "S"
+      },
+      {
+        "output": "Zadejte cas t1:\nZadejte cas t2:\nDoba:  0:00:00,000\n",
+        "input": "12:00:00,000\n12:00:00,000\n",
+        "grade_point": 1,
+        "visibility": 2,
+        "name": "testNumber: 2",
+        "match_type": "S"
+      },
+      {
+        "output": "Zadejte cas t1:\nZadejte cas t2:\nDoba:  6:06:06,006\n",
+        "input": "01:01:01,001\n07:07:07,007\n",
+        "grade_point": 1,
+        "visibility": 2,
+        "name": "testNumber: 3",
+        "match_type": "S"
+      },
+      {
+        "output": "Zadejte cas t1:\nZadejte cas t2:\nDoba:  6:06:06,006\n",
+        "input": " 1 : 1 : 1 , 001\n 7 : 7 : 7 , 007\n",
+        "grade_point": 1,
+        "visibility": 2,
+        "name": "testNumber: 4",
+        "match_type": "S"
+      },
+      {
+        "output": "Zadejte cas t1:\nZadejte cas t2:\nDoba: 16:06:06,006\n",
+        "input": "1:1:1,001\n17:7:7,007\n",
+        "grade_point": 1,
+        "visibility": 2,
+        "name": "testNumber: 5",
+        "match_type": "S"
+      },
+      {
+        "output": "Zadejte cas t1:\nZadejte cas t2:\nNespravny vstup.\n",
+        "input": "12:30:00,000\n12:00:00,000\n",
+        "grade_point": 1,
+        "visibility": 2,
+        "name": "testNumber: 6",
+        "match_type": "S"
+      },
+      {
+        "output": "Zadejte cas t1:\nZadejte cas t2:\nNespravny vstup.\n",
+        "input": "15:30:34,123\n15:60:34,123\n",
+        "grade_point": 1,
+        "visibility": 2,
+        "name": "testNumber: 7",
+        "match_type": "S"
+      },
+      {
+        "output": "Zadejte cas t1:\nNespravny vstup.\n",
+        "input": "15:40:21.745\n",
+        "grade_point": 1,
+        "visibility": 2,
+        "name": "testNumber: 8",
+        "match_type": "S"
+      }
+    ],
+    "language": "c++",
+    "title": "Délka intervalu",
+    "code_template": "[{\"name\":\"main.cpp\",\"content\":\"\",\"readonly_ranges\":[]}]",
+    "content": "<p style=\"font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\">Úkolem je vytvořit program, který vypočte délku časového intervalu.<\/span><\/p>\n<p style=\"font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\">Na vstupu dostane program čas počátku časového intervalu&nbsp;<code>t1<\/code>&nbsp;a čas konce časového intervalu&nbsp;<code>t2<\/code>. Čas je vždy zadán ve formátu&nbsp;<code>h:m:s,ms<\/code>&nbsp;(hodina, minuta, sekunda, zlomek sekund). Program vypočte délku tohoto časového intervalu a zobrazí ji ve formátu&nbsp;<code>h:m:s,ms<\/code>. Očekávané chování je vidět i z ukázek níže.<\/span><\/p>\n<p style=\"font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\">Pokud je vstup neplatný, program to musí detekovat a zobrazit chybové hlášení. Chybové hlášení zobrazujte na standardní výstup (ne na chybový výstup). Za chybu považujte:<\/span><\/p>\n<ul style=\"font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\">\n <li><span style=\"background-color: rgb(255, 255, 255);\">nečíselné hodnoty,<\/span><\/li>\n <li><span style=\"background-color: rgb(255, 255, 255);\">hodnoty mimo meze (max. 23h, max. 59 min, max. 59 sec, max. 999 ms),<\/span><\/li>\n <li><span style=\"background-color: rgb(255, 255, 255);\">chybějící čárka nebo dvojtečka,<\/span><\/li>\n <li><span style=\"background-color: rgb(255, 255, 255);\">počáteční čas je větší než koncový čas.<\/span><\/li>\n<\/ul>\n<p style=\"font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><strong style=\"background-color: rgb(255, 255, 255);\">Ukázky běhu programu:<\/strong><\/p>\n<hr style=\"height: 0px; border-style: solid; border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-right-width: 0px; border-left-width: 0px; font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\">\n<pre style=\"font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\"><b>Zadejte cas t1:<\/b>\n11:45:20,456\n<b>Zadejte cas t2:<\/b>\n12:07:54,349\n<b>Doba:  0:22:33,893<\/b>\n<\/span><\/pre>\n<hr style=\"height: 0px; border-style: solid; border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-right-width: 0px; border-left-width: 0px; font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\">\n<pre style=\"font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\"><b>Zadejte cas t1:<\/b>\n15:18:34,232\n<b>Zadejte cas t2:<\/b>\n15:18:34,293\n<b>Doba:  0:00:00,061<\/b>\n<\/span><\/pre>\n<hr style=\"height: 0px; border-style: solid; border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-right-width: 0px; border-left-width: 0px; font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\">\n<pre style=\"font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\"><b>Zadejte cas t1:<\/b>\n12:00:00,000\n<b>Zadejte cas t2:<\/b>\n12:00:00,000\n<b>Doba:  0:00:00,000<\/b>\n<\/span><\/pre>\n<hr style=\"height: 0px; border-style: solid; border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-right-width: 0px; border-left-width: 0px; font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\">\n<pre style=\"font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\"><b>Zadejte cas t1:<\/b>\n01:01:01,001\n<b>Zadejte cas t2:<\/b>\n07:07:07,007\n<b>Doba:  6:06:06,006<\/b>\n<\/span><\/pre>\n<hr style=\"height: 0px; border-style: solid; border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-right-width: 0px; border-left-width: 0px; font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\">\n<pre style=\"font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\"><b>Zadejte cas t1:<\/b>\n 1 : 1 : 1 , 001\n<b>Zadejte cas t2:<\/b>\n 7 : 7 : 7 , 007\n<b>Doba:  6:06:06,006<\/b>\n<\/span><\/pre>\n<hr style=\"height: 0px; border-style: solid; border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-right-width: 0px; border-left-width: 0px; font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\">\n<pre style=\"font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\"><b>Zadejte cas t1:<\/b>\n1:1:1,001\n<b>Zadejte cas t2:<\/b>\n17:7:7,007\n<b>Doba: 16:06:06,006<\/b>\n<\/span><\/pre>\n<hr style=\"height: 0px; border-style: solid; border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-right-width: 0px; border-left-width: 0px; font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\">\n<pre style=\"font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\"><b>Zadejte cas t1:<\/b>\n12:30:00,000\n<b>Zadejte cas t2:<\/b>\n12:00:00,000\n<b>Nespravny vstup.<\/b>\n<\/span><\/pre>\n<hr style=\"height: 0px; border-style: solid; border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-right-width: 0px; border-left-width: 0px; font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\">\n<pre style=\"font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\"><b>Zadejte cas t1:<\/b>\n15:30:34,123\n<b>Zadejte cas t2:<\/b>\n15:60:34,123\n<b>Nespravny vstup.<\/b>\n<\/span><\/pre>\n<hr style=\"height: 0px; border-style: solid; border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-right-width: 0px; border-left-width: 0px; font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\">\n<pre style=\"font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\"><b>Zadejte cas t1:<\/b>\n15:40:21.745\n<b>Nespravny vstup.<\/b>\n<\/span><\/pre>\n<hr style=\"height: 0px; border-style: solid; border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-right-width: 0px; border-left-width: 0px; font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\">\n<p style=\"font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><strong style=\"background-color: rgb(255, 255, 255);\">Poznámky:<\/strong><\/p>\n<ul style=\"font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\">\n <li><span style=\"background-color: rgb(255, 255, 255);\">Ukázkové běhy zachycují očekávané výpisy Vašeho programu (tučné písmo) a vstupy zadané uživatelem (základní písmo). Zvýraznění tučným písmem je použité pouze zde na stránce zadání, aby byl výpis lépe čitelný. Váš program má za úkol zobrazit text bez zvýrazňování (bez HTML markupu).<\/span><\/li>\n <li><span style=\"background-color: rgb(255, 255, 255);\">Znak odřádkování je i za poslední řádkou výstupu (i za případným chybovým hlášením).<\/span><\/li>\n <li><span style=\"background-color: rgb(255, 255, 255);\">Pro načítání vstupu se hodí funkce&nbsp;<code>scanf<\/code>. Pomocí funkce&nbsp;<code>scanf<\/code>&nbsp;lze i snadno kontrolovat přítomnost dvojtečky a čárky.<\/span><\/li>\n <li><span style=\"background-color: rgb(255, 255, 255);\">Pro načítání vstupu není vhodné používat desetinná čísla (na vstupu je úmyslně desetinná čárka, ne tečka). Dále, vstup není vhodné zpracovávat jako řetězec, je to zbytečně pracné.<\/span><\/li>\n <li><span style=\"background-color: rgb(255, 255, 255);\">Při programování si dejte pozor na přesnou podobu výpisů. Výstup Vašeho programu kontroluje stroj, který požaduje přesnou shodu výstupů Vašeho programu s výstupy referenčními. Za chybu je považováno, pokud se výpis liší. I chybějící nebo přebývající mezera/odřádkování je považováno za chybu.<\/span><\/li>\n <li><span style=\"background-color: rgb(255, 255, 255);\">Na výstupu zobrazte hodiny na 2 místa bez úvodních nul, minuty a sekundy na 2 místa s úvodními nulami a milisekundy na 3 místa s úvodními nulami.<\/span><\/li>\n <li><span style=\"background-color: rgb(255, 255, 255);\">Můžete se spolehnout, že na vstupu budou milisekundy zadané pomocí 3 číslic. Výjimkou je poslední (bonusový) test, kde počet milisekund může být zadán pouze pomocí 1, 2 nebo 3 cifer (např. zápis 1:2:3,4 znamená 400 ms). Takový vstup se zpracovává hůře, dá se ale vystačit s funkcí&nbsp;<code>scanf<\/code>.<\/span><\/li>\n<\/ul>",
+    "modal_solution": "[{\"name\":\"main.cpp\",\"content\":\"\",\"readonly_ranges\":[]}]",
+    "editor_file_upload": 1,
+    "eval_method": "auto_grade",
+    "enable_late_submission": 1,
+    "autolock": 0,
+    "testcase_visible": 0,
+    "code_template_readonly_ranges": null,
+    "editor_copy_paste": 1
+  },
+  "version": 1
+}

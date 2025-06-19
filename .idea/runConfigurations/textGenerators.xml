@@ -1,0 +1,18 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="textGenerators" type="JUnit" factoryName="JUnit">
+    <module name="OnlineGdbClassroom" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="cz.vscht.bioinformatics.kolar.onlinegdbclassroom.testbuilder.support.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <option name="PACKAGE_NAME" value="cz.vscht.bioinformatics.kolar.onlinegdbclassroom" />
+    <option name="MAIN_CLASS_NAME" value="" />
+    <option name="METHOD_NAME" value="" />
+    <option name="TEST_OBJECT" value="package" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

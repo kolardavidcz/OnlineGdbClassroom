@@ -1,0 +1,19 @@
+/*
+.root {
+    -fx-font-size: medium;
+}
+ */
+
+.fencytitle {
+    -fx-text-fill: linear-gradient(to bottom right, #05a6b5, #0346aa);
+    -fx-url: "https://www.onlinegdb.com/classroom";
+
+}
+
+.tooltip {
+    -fx-font-family: "Consolas", "DejaVu Sans Mono", "monospace"; /*  použije první dostupný font */
+    -fx-background-radius: 3;
+    -fx-border-width: 3;
+    -fx-padding: 5px;
+    -fx-font-size: medium;
+}

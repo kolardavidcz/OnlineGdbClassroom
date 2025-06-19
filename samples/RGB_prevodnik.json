@@ -1,0 +1,85 @@
+{
+  "assignment": {
+    "enable_auto_mark_complete": null,
+    "enable_grade": 1,
+    "testcases": [
+      {
+        "output": "Zadejte barvu v RGB formatu:\n#FF0000\n",
+        "input": "rgb ( 255, 0, 0 )\n",
+        "grade_point": 1,
+        "visibility": 2,
+        "name": "testNumber: 0",
+        "match_type": "S"
+      },
+      {
+        "output": "Zadejte barvu v RGB formatu:\n#00FF00\n",
+        "input": "    rgb\t\t\t(  0  ,   255  ,   0   )\n",
+        "grade_point": 1,
+        "visibility": 2,
+        "name": "testNumber: 1",
+        "match_type": "S"
+      },
+      {
+        "output": "Zadejte barvu v RGB formatu:\n#0000FF\n",
+        "input": "rgb(0,0,255)\n",
+        "grade_point": 1,
+        "visibility": 2,
+        "name": "testNumber: 2",
+        "match_type": "S"
+      },
+      {
+        "output": "Zadejte barvu v RGB formatu:\n#7F7F00\n",
+        "input": "rgb ( 127, 127, 0 )\n",
+        "grade_point": 1,
+        "visibility": 2,
+        "name": "testNumber: 3",
+        "match_type": "S"
+      },
+      {
+        "output": "Zadejte barvu v RGB formatu:\nNespravny vstup.\n",
+        "input": "hsl ( 0, 127, 0 )\n",
+        "grade_point": 1,
+        "visibility": 2,
+        "name": "testNumber: 4",
+        "match_type": "S"
+      },
+      {
+        "output": "Zadejte barvu v RGB formatu:\nNespravny vstup.\n",
+        "input": "rgb ( 255, 0 )\n",
+        "grade_point": 1,
+        "visibility": 2,
+        "name": "testNumber: 5",
+        "match_type": "S"
+      },
+      {
+        "output": "Zadejte barvu v RGB formatu:\nNespravny vstup.\n",
+        "input": "rgb ( 1000, 127, 0 )\n",
+        "grade_point": 1,
+        "visibility": 2,
+        "name": "testNumber: 6",
+        "match_type": "S"
+      },
+      {
+        "output": "Zadejte barvu v RGB formatu:\nNespravny vstup.\n",
+        "input": "RGB ( 100, 200, 0 )\n",
+        "grade_point": 1,
+        "visibility": 2,
+        "name": "testNumber: 7",
+        "match_type": "S"
+      }
+    ],
+    "language": "c++",
+    "title": "RGB převodník",
+    "code_template": "[{\"name\":\"main.cpp\",\"content\":\"#include <stdio.h>\\n\\nint main() {\\n   //TODO\\n    return 0;\\n}\\n\",\"readonly_ranges\":[]}]",
+    "content": "<p style=\"font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\">Úkolem je vytvořit program, který převede barvu z RGB zápisu do hexadecimálního formátu.<\/span><\/p>\n<p style=\"font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\">Na vstupu dostanete definici barvy v podobě&nbsp;<code>rgb ( x, y, z )<\/code>.&nbsp;<code>x<\/code>,&nbsp;<code>y<\/code>&nbsp;a&nbsp;<code>z<\/code>&nbsp;jsou celá čísla v intervalu od 0 do 255 včetně a reprezentují barevnou složku. Cílem je převést tento formát na formát začínající znakem&nbsp;<code>#<\/code>&nbsp;a následně bez mezer pro každou barevnou složku hexadecimální zápis na dvě pozice například pro hodnotu&nbsp;<code>12<\/code>&nbsp;vypíšete dvě hodnoty&nbsp;<code>0C<\/code>. Formát vstupu a výstupu je vidět níže na ukázce práce programu.<\/span><\/p>\n<p style=\"font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\">Pokud je vstup neplatný, program to musí detekovat a zobrazit chybové hlášení. Chybové hlášení zobrazujte na standardní výstup (ne na chybový výstup). Za chybu považujte:<\/span><\/p>\n<ul style=\"font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\">\n <li><span style=\"background-color: rgb(255, 255, 255);\">vstup neobsahuje řetězec&nbsp;<code>rgb<\/code>,<\/span><\/li>\n <li><span style=\"background-color: rgb(255, 255, 255);\">chybějící čárka nebo závorka,<\/span><\/li>\n <li><span style=\"background-color: rgb(255, 255, 255);\">chybějící barevná složka,<\/span><\/li>\n <li><span style=\"background-color: rgb(255, 255, 255);\">barevná složka není validní číslo,<\/span><\/li>\n <li><span style=\"background-color: rgb(255, 255, 255);\">barevná složka není v rozmezí 0 až 255.<\/span><\/li>\n<\/ul>\n<p style=\"font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><strong style=\"background-color: rgb(255, 255, 255);\">Ukázky běhu programu:<\/strong><\/p>\n<hr style=\"height: 0px; border-style: solid; border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-right-width: 0px; border-left-width: 0px; font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\">\n<pre style=\"font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\"><b>Zadejte barvu v RGB formatu:<\/b>\nrgb ( 255, 0, 0 )\n<b>#FF0000<\/b>\n<\/span><\/pre>\n<hr style=\"height: 0px; border-style: solid; border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-right-width: 0px; border-left-width: 0px; font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\">\n<pre style=\"font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\"><b>Zadejte barvu v RGB formatu:<\/b>\n    rgb\t\t\t(  0  ,   255  ,   0   )\n<b>#00FF00<\/b>\n<\/span><\/pre>\n<hr style=\"height: 0px; border-style: solid; border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-right-width: 0px; border-left-width: 0px; font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\">\n<pre style=\"font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\"><b>Zadejte barvu v RGB formatu:<\/b>\nrgb(0,0,255)\n<b>#0000FF<\/b>\n<\/span><\/pre>\n<hr style=\"height: 0px; border-style: solid; border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-right-width: 0px; border-left-width: 0px; font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\">\n<pre style=\"font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\"><b>Zadejte barvu v RGB formatu:<\/b>\nrgb ( 127, 127, 0 )\n<b>#7F7F00<\/b>\n<\/span><\/pre>\n<hr style=\"height: 0px; border-style: solid; border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-right-width: 0px; border-left-width: 0px; font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\">\n<pre style=\"font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\"><b>Zadejte barvu v RGB formatu:<\/b>\nhsl ( 0, 127, 0 )\n<b>Nespravny vstup.<\/b>\n<\/span><\/pre>\n<hr style=\"height: 0px; border-style: solid; border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-right-width: 0px; border-left-width: 0px; font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\">\n<pre style=\"font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\"><b>Zadejte barvu v RGB formatu:<\/b>\nrgb ( 255, 0 )\n<b>Nespravny vstup.<\/b>\n<\/span><\/pre>\n<hr style=\"height: 0px; border-style: solid; border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-right-width: 0px; border-left-width: 0px; font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\">\n<pre style=\"font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\"><b>Zadejte barvu v RGB formatu:<\/b>\nrgb ( 1000, 127, 0 )\n<b>Nespravny vstup.<\/b>\n<\/span><\/pre>\n<hr style=\"height: 0px; border-style: solid; border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-right-width: 0px; border-left-width: 0px; font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\">\n<pre style=\"font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><span style=\"background-color: rgb(255, 255, 255);\"><b>Zadejte barvu v RGB formatu:<\/b>\nRGB ( 100, 200, 0 )\n<b>Nespravny vstup.<\/b>\n<\/span><\/pre>\n<hr style=\"height: 0px; border-style: solid; border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(204, 204, 204); border-right-width: 0px; border-left-width: 0px; font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\">\n<p style=\"font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\"><strong style=\"background-color: rgb(255, 255, 255);\">Poznámky:<\/strong><\/p>\n<ul style=\"font-family: Tahoma; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; text-decoration-thickness: initial;\">\n <li><span style=\"background-color: rgb(255, 255, 255);\">Ukázkové běhy zachycují očekávané výpisy Vašeho programu (tučné písmo) a vstupy zadané uživatelem (základní písmo). Zvýraznění tučným písmem je použité pouze zde na stránce zadání, aby byl výpis lépe čitelný. Váš program má za úkol zobrazit text bez zvýrazňování (bez HTML markupu).<\/span><\/li>\n <li><span style=\"background-color: rgb(255, 255, 255);\">Znak odřádkování je i za poslední řádkou výstupu (i za případným chybovým hlášením).<\/span><\/li>\n <li><span style=\"background-color: rgb(255, 255, 255);\">Pro načítání vstupu se hodí funkce&nbsp;<code>scanf<\/code>. Pomocí funkce&nbsp;<code>scanf<\/code>&nbsp;lze i snadno kontrolovat přítomnost čárek, závorek a řetězce&nbsp;<code>rgb<\/code>.<\/span><\/li>\n <li><span style=\"background-color: rgb(255, 255, 255);\">Nepokoušejte se načíst řetězec&nbsp;<code>rgb<\/code>&nbsp;do paměti a pak jej kontrolovat. Práce s řetězci je v C komplikovaná a náchylná k chybám. V této úloze to navíc není potřeba, kontrolu zvládne funkce&nbsp;<code>scanf<\/code>.<\/span><\/li>\n <li><span style=\"background-color: rgb(255, 255, 255);\">Na výstupu zobrazte hexadecimální číslo s velkými písmeny. Použijte odpovídající formát pro funkci&nbsp;<code>printf<\/code>.<\/span><\/li>\n <li><span style=\"background-color: rgb(255, 255, 255);\">Při programování si dejte pozor na přesnou podobu výpisů. Výstup Vašeho programu kontroluje stroj, který požaduje přesnou shodu výstupů Vašeho programu s výstupy referenčními. Za chybu je považováno, pokud se výpis liší. I chybějící nebo přebývající mezera/odřádkování je považováno za chybu.<\/span><\/li>\n<\/ul>",
+    "modal_solution": "[{\"name\":\"main.cpp\",\"content\":\"#include <stdio.h>\\n\\nint main()\\n{\\n    int red;\\n    int green;\\n    int blue;\\n    char chack;\\n    printf(\\\"Zadejte barvu v RGB formatu:\\\\n\\\");\\n    \\n    if (scanf(\\\" rgb ( %d , %d , %d %c\\\", &red, &green, &blue, &chack) != 4 || 0 > red || 255 < red || 0 > green || 255 < green || 0 > blue || 255 < blue || chack != ')' ) {\\n        printf(\\\"Nespravny vstup.\\\\n\\\");\\n        return 1;\\n    }\\n\\n    printf(\\\"#%02X%02X%02X\\\\n\\\", red, green, blue);\\n\\n    return 0;\\n}\\n\",\"readonly_ranges\":[]}]",
+    "editor_file_upload": 1,
+    "eval_method": "auto_grade",
+    "enable_late_submission": 1,
+    "autolock": 0,
+    "testcase_visible": 0,
+    "code_template_readonly_ranges": null,
+    "editor_copy_paste": 1
+  },
+  "version": 1
+}
