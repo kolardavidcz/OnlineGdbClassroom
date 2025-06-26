@@ -110,7 +110,7 @@ public class MainMenuController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
         programmingLanguagesChoiceBox.getItems().addAll(ProgrammingLanguage.getAllDisplayNames());
-        programmingLanguagesChoiceBox.getSelectionModel().select("Java");
+        programmingLanguagesChoiceBox.getSelectionModel().select(ProgrammingLanguage.C.getDisplayName());
 
         inputRegExpTab.setText(EnumTabOpened.REG_EXP.getDisplayName());
         inputTextFilesTab.setText(EnumTabOpened.FILES.getDisplayName());
