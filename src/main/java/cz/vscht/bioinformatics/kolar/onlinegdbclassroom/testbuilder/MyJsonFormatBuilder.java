@@ -1,9 +1,10 @@
 package cz.vscht.bioinformatics.kolar.onlinegdbclassroom.testbuilder;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import cz.vscht.bioinformatics.kolar.onlinegdbclassroom.testbuilder.enums.ProgrammingLanguage;
-import org.json.JSONArray;
-import org.json.JSONObject;
 import org.jsoup.Jsoup;
+
+import java.util.*;
 
 
 /**
@@ -41,57 +42,61 @@ public class MyJsonFormatBuilder {
      *
      * @return JSONObject containing the formatted assignment details
      */
-    public JSONObject getIntroductionFormat() {
-       JSONObject assignment = new JSONObject();
+    public Map<String, Object> getIntroductionFormat() {
 
-        //NOTED: Input form REQUIRES specific order
-        String tamplate = "[{\"name\":\"main" + programmingLanguage.getFileExtension() + "\",\"content\":" + clean(codeTemplate) + ",\"readonly_ranges\":[]}]";
-        String solution = "[{\"name\":\"main" + programmingLanguage.getFileExtension() + "\",\"content\":" + clean(modelSolution) + ",\"readonly_ranges\":[]}]";
+        Map<String, Object> assignment = new LinkedHashMap<>();
 
-        assignment.put("title", title)
-        .put("content", instructions)
-        .put("language", programmingLanguage.getApiValue())
-        .put("code_template", tamplate)
-        .put("modal_solution", solution)
-        .put("eval_method", "auto_grade")
-        .put("enable_grade", 1)
-        .put("enable_late_submission", 1)
-        .put("enable_auto_mark_complete", JSONObject.NULL)
-        .put("editor_copy_paste", 1)
-        .put("editor_file_upload", 1)
-        .put("autolock", 0)
-        .put("testcase_visible", 0)
-        .put("code_template_readonly_ranges", JSONObject.NULL)
-        .put("testcases", new JSONArray());
+
+        // Vytvoření pole pro šablonu kódu
+        List<Map<String, Object>> codeTemplateArray = new ArrayList<>();
+        Map<String, Object> codeTemplateObject = new LinkedHashMap<>();
+        codeTemplateObject.put("name", "main" + programmingLanguage.getFileExtension());
+        // Zde použijte vaši metodu 'clean()', pokud je nutná nějaká úprava řetězce
+        // před vložením. Jackson automaticky ošetří uvozovky a speciální znaky,
+        // takže byste ho již neměl obalovat stringy JSONu.
+        codeTemplateObject.put("content", codeTemplate);
+        codeTemplateObject.put("readonly_ranges", new ArrayList<>());
+        codeTemplateArray.add(codeTemplateObject);
+
+        // Vytvoření pole pro referenční řešení
+        List<Map<String, Object>> modelSolutionArray = new ArrayList<>();
+        Map<String, Object> modelSolutionObject = new LinkedHashMap<>();
+        modelSolutionObject.put("name", "main" + programmingLanguage.getFileExtension());
+        // Stejně jako výše, neobalujte stringem JSONu. Jackson to udělá za vás.
+        modelSolutionObject.put("content", modelSolution);
+        modelSolutionObject.put("readonly_ranges", new ArrayList<>());
+        modelSolutionArray.add(modelSolutionObject);
+        //purification of codeTemplate and modelSolution is not needed here, as they are already strings.
+        ObjectMapper tempObjectMapper = new ObjectMapper();
+        String codeTemplateAsString = "";
+        String modelSolutionAsString = "";
+        try {
+            codeTemplateAsString = tempObjectMapper.writeValueAsString(codeTemplateArray);
+            modelSolutionAsString = tempObjectMapper.writeValueAsString(modelSolutionArray);
+        } catch (Exception e) {
+            System.err.println("Chyba při serializaci pole na string: " + e.getMessage());
+        }
+
+        assignment.put("title", title);
+        assignment.put("content", instructions);
+        assignment.put("language", programmingLanguage.getApiValue());
+        // Zde už přidáváme List a Mapy, ne stringy s JSONem, Jackson je zserializuje správně.
+        assignment.put("code_template", codeTemplateAsString);
+        assignment.put("modal_solution", modelSolutionAsString);
+        assignment.put("eval_method", "auto_grade");
+        assignment.put("enable_grade", 1);
+        assignment.put("enable_late_submission", 1);
+        // Pro 'null' hodnoty použijte v Javě 'null'.
+        assignment.put("enable_auto_mark_complete", null);
+        assignment.put("editor_copy_paste", 1);
+        assignment.put("editor_file_upload", 1);
+        assignment.put("autolock", null);
+        assignment.put("testcase_visible", 0);
+        assignment.put("code_template_readonly_ranges", null);
+        assignment.put("testcases", new ArrayList<>()); // Prázdné pole testovacích případů.
+
+
 
         return assignment;
     }
-
-    /**
-     * @param toClean The string to be cleaned and quoted
-     * @return A JSON-safe quoted string
-     */
-    public String clean (String toClean) {
-        return JSONObject.quote(toClean);
-    }
 }
-
-/** @tamplate,solution REQUIRES specific order, so puting them in through JSONObject is REDUNDANT
- *
- *  In case of refactoring to different Json generator:
-
-        JSONArray codeTemplateArray = new JSONArray();
-        JSONObject codeTemplateObject = new JSONObject();
-        codeTemplateObject.put("name", "main" + programmingLanguage.getFileExtension());
-        codeTemplateObject.put("content", clean(codeTemplate));
-        codeTemplateObject.put("readonly_ranges", new JSONArray());
-        codeTemplateArray.put(codeTemplateObject);
-
-        JSONArray modelSolutionArray = new JSONArray();
-        JSONObject modelSolutionObject = new JSONStringer();
-        modelSolutionObject.put("name", "main" + programmingLanguage.getFileExtension());
-        modelSolutionObject.put("content", modelSolution);  // JSONObject will handle escaping
-        modelSolutionObject.put("readonly_ranges", new JSONArray());
-        modelSolutionArray.put(modelSolutionObject);
-
-*/

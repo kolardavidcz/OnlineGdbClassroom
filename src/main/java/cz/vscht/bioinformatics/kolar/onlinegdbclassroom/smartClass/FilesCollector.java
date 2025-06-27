@@ -94,6 +94,13 @@ public class FilesCollector extends TestCollector {
 
     }
 
+    @Override
+    public List<String> getFileNames()  {
+        return files.stream()
+                .map(File::getName)
+                .collect(Collectors.toList());
+    }
+
     public List<File> getFiles() {
         return files;
     }

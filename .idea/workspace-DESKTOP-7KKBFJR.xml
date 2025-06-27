@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="OnlineGdbClassroom:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="97183cd8-da8b-4b69-8daf-b434cb590485" name="Changes" comment="Added&#10;- separet UI file manager&#10;- updated UI&#10;- added Window owners&#10;- more cleaning">
+      <change beforePath="$PROJECT_DIR$/samples/citaty/in/desktop.ini" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="Enum" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2vKJ2KDdGOgED796oQ4Xfzl7yPe" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ErrorHendelerOuter.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FinalBuilder.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainMenu.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
+    &quot;JUnit.TextRegExpBasedTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TextRegExpBasedTest.moreComplex.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TextRegExpBasedTest.simple.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.TextRegExpBasedTest.specailGroups.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.TextSeparatorBasedTest.multipleFiles.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.TextSeparatorBasedTest.singleLine.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.builderTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.builderTest.regExpCombo.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.builderTest.regExpFile.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.textGenerators.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jakad/OneDrive - VŠCHT/Java/onlinegdbclassroom/samples&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.3253012&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jakad\OneDrive - VŠCHT\Java\onlinegdbclassroom\samples" />
+      <recent name="C:\Users\jakad\OneDrive - VŠCHT\Java\onlinegdbclassroom\src\test\java\example" />
+      <recent name="C:\Users\jakad\OneDrive - VŠCHT\Java\onlinegdbclassroom\src\main\resources" />
+      <recent name="C:\Users\jakad\OneDrive - VŠCHT\Java\onlinegdbclassroom\src\main\junk\cz\vscht\bioinformatics\kolar\onlinegdbclassroom\testbuilder" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\madle\OneDrive - VŠCHT\Java\onlinegdbclassroom\samples" />
+      <recent name="C:\Users\jakad\OneDrive - VŠCHT\Java\onlinegdbclassroom\junk" />
+      <recent name="C:\Users\jakad\OneDrive - VŠCHT\Java\onlinegdbclassroom" />
+      <recent name="C:\Users\jakad\OneDrive - VŠCHT\Java\onlinegdbclassroom\src\main\junk\cz\vscht\bioinformatics\kolar\onlinegdbclassroom" />
+      <recent name="C:\Users\jakad\OneDrive - VŠCHT\Java\onlinegdbclassroom\src\main\resources" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="cz.vscht.bioinformatics.kolar.onlinegdbclassroom.ui" />
+      <recent name="cz.vscht.bioinformatics.kolar.onlinegdbclassroom" />
+      <recent name="cz.vscht.bioinformatics.kolar.onlinegdbclassroom.testbuilder" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="cz.vscht.bioinformatics.kolar.onlinegdbclassroom.testbuilder" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cz.vscht.bioinformatics.kolar.onlinegdbclassroom.testbuilder" />
+      <recent name="cz.vscht.bioinformatics.kolar.onlinegdbclassroom.smartClass.regExpSpecialGroups" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.textGenerators">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cz.vscht.bioinformatics.kolar.onlinegdbclassroom.Main" />
+      <module name="OnlineGdbClassroom" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cz.vscht.bioinformatics.kolar.onlinegdbclassroom.ui.support.ErrorHendelerOuter" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TextRegExpBasedTest.simple" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OnlineGdbClassroom" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cz.vscht.bioinformatics.kolar.onlinegdbclassroom.testbuilder.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cz.vscht.bioinformatics.kolar.onlinegdbclassroom.testbuilder" />
+      <option name="MAIN_CLASS_NAME" value="cz.vscht.bioinformatics.kolar.onlinegdbclassroom.testbuilder.TextRegExpBasedTest" />
+      <option name="METHOD_NAME" value="simple" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TextRegExpBasedTest.specailGroups" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OnlineGdbClassroom" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cz.vscht.bioinformatics.kolar.onlinegdbclassroom.testbuilder.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cz.vscht.bioinformatics.kolar.onlinegdbclassroom.testbuilder" />
+      <option name="MAIN_CLASS_NAME" value="cz.vscht.bioinformatics.kolar.onlinegdbclassroom.testbuilder.TextRegExpBasedTest" />
+      <option name="METHOD_NAME" value="specailGroups" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TextSeparatorBasedTest.multipleFiles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OnlineGdbClassroom" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cz.vscht.bioinformatics.kolar.onlinegdbclassroom.testbuilder.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cz.vscht.bioinformatics.kolar.onlinegdbclassroom.testbuilder" />
+      <option name="MAIN_CLASS_NAME" value="cz.vscht.bioinformatics.kolar.onlinegdbclassroom.testbuilder.TextSeparatorBasedTest" />
+      <option name="METHOD_NAME" value="multipleFiles" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="builderTest.regExpCombo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OnlineGdbClassroom" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cz.vscht.bioinformatics.kolar.onlinegdbclassroom.finalBuilder.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cz.vscht.bioinformatics.kolar.onlinegdbclassroom.finalBuilder" />
+      <option name="MAIN_CLASS_NAME" value="cz.vscht.bioinformatics.kolar.onlinegdbclassroom.finalBuilder.builderTest" />
+      <option name="METHOD_NAME" value="regExpCombo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.textGenerators" />
+      <item itemvalue="JUnit.TextSeparatorBasedTest.multipleFiles" />
+      <item itemvalue="JUnit.builderTest.regExpCombo" />
+      <item itemvalue="JUnit.TextRegExpBasedTest.specailGroups" />
+      <item itemvalue="JUnit.TextRegExpBasedTest.simple" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.builderTest.regExpCombo" />
+        <item itemvalue="JUnit.TextRegExpBasedTest.specailGroups" />
+        <item itemvalue="JUnit.TextRegExpBasedTest.simple" />
+        <item itemvalue="JUnit.TextSeparatorBasedTest.multipleFiles" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129" />
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="97183cd8-da8b-4b69-8daf-b434cb590485" name="Changes" comment="" />
+      <created>1743887627272</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1743887627272</updated>
+      <workItem from="1743887628616" duration="1503000" />
+      <workItem from="1743889135270" duration="722000" />
+      <workItem from="1744064567569" duration="1309000" />
+      <workItem from="1744099686819" duration="371000" />
+      <workItem from="1744134523104" duration="173000" />
+      <workItem from="1744134707398" duration="89000" />
+      <workItem from="1744134804750" duration="18281000" />
+      <workItem from="1744215680407" duration="145000" />
+      <workItem from="1744215837559" duration="17851000" />
+      <workItem from="1744234556620" duration="845000" />
+      <workItem from="1744375945995" duration="7439000" />
+      <workItem from="1744499021229" duration="6739000" />
+      <workItem from="1744545643859" duration="373000" />
+      <workItem from="1744733840738" duration="8003000" />
+      <workItem from="1744742391892" duration="1171000" />
+      <workItem from="1744743575168" duration="22000" />
+      <workItem from="1744743612745" duration="502000" />
+      <workItem from="1744744131709" duration="275000" />
+      <workItem from="1744744458274" duration="2056000" />
+      <workItem from="1744746555694" duration="7050000" />
+      <workItem from="1744753813813" duration="2381000" />
+      <workItem from="1744756445866" duration="588000" />
+      <workItem from="1744819276408" duration="18273000" />
+      <workItem from="1744889391022" duration="5051000" />
+      <workItem from="1745174067288" duration="257000" />
+      <workItem from="1745174348560" duration="14102000" />
+      <workItem from="1745225512048" duration="7810000" />
+      <workItem from="1745338455318" duration="144000" />
+      <workItem from="1745339563054" duration="71000" />
+      <workItem from="1745339776719" duration="1050000" />
+      <workItem from="1745920991374" duration="211000" />
+      <workItem from="1746104026943" duration="26155000" />
+      <workItem from="1746135438255" duration="7300000" />
+      <workItem from="1746200963511" duration="709000" />
+      <workItem from="1746280123362" duration="275000" />
+      <workItem from="1746308564258" duration="3095000" />
+      <workItem from="1746311680221" duration="2156000" />
+      <workItem from="1746381048638" duration="3281000" />
+      <workItem from="1746384798080" duration="327000" />
+      <workItem from="1746461661329" duration="1671000" />
+      <workItem from="1746463407661" duration="229000" />
+      <workItem from="1746512782277" duration="138000" />
+      <workItem from="1746513248778" duration="1052000" />
+      <workItem from="1746980616455" duration="1562000" />
+      <workItem from="1747123285208" duration="869000" />
+      <workItem from="1747398554181" duration="2305000" />
+      <workItem from="1747573674044" duration="1414000" />
+      <workItem from="1747832061864" duration="122000" />
+      <workItem from="1747832205171" duration="119000" />
+      <workItem from="1747832335913" duration="19806000" />
+      <workItem from="1747852320143" duration="2455000" />
+      <workItem from="1747855048865" duration="660000" />
+    </task>
+    <task id="LOCAL-00001" summary="added all files while its working">
+      <option name="closed" value="true" />
+      <created>1743889202333</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1743889202333</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added all files while its working">
+      <option name="closed" value="true" />
+      <created>1743889792349</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1743889792349</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added&#10;-css styles.css&#10;&#10;Extra&#10;- just chacing afther seminar">
+      <option name="closed" value="true" />
+      <created>1744065849932</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1744065849932</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added&#10;- added classess for smartImputs/outputs (with verification)&#10;- option to delete &quot;&quot; empty strings (with UI)">
+      <option name="closed" value="true" />
+      <created>1744153113544</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1744153113544</updated>
+    </task>
+    <task id="LOCAL-00005" summary="REGEXP SOLVED UPDATE&#10;&#10;Big updates&#10;- ADDED master class, that handles creating jason file&#10;- ADDED smart classes that handle comunicating with&#10;    - RegEx SmartRegExp&#10;    - Files SmartFiles&#10;- fixed error handeling herarchy&#10;- added saving dialog + animation&#10;&#10;Extras&#10;- updated/fixed FormatBuilder.java format&#10;- updated/fixed TestBuilder.java format&#10;- added test samples assigment.json, assignment (6).json&#10;- removed static metods that previously handled Files/RegEx&#10;- option to delete &quot;&quot; empty strings (with UI)&#10;- removed reduntent enums&#10;- added my testing funtion for sout&#10;- added way to list Programming languages">
+      <option name="closed" value="true" />
+      <created>1744233200349</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1744233200349</updated>
+    </task>
+    <task id="LOCAL-00006" summary="quickfixes + update readme">
+      <option name="closed" value="true" />
+      <created>1744235393789</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1744235393789</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added&#10;- errors popup&#10;- added Bi-directional-bind inputRegExAmount + OutputRegExAmount&#10;&#10;- cleaning">
+      <option name="closed" value="true" />
+      <created>1744381391418</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1744381391418</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added&#10;- tests">
+      <option name="closed" value="true" />
+      <created>1744744096725</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1744744096725</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added&#10;- code support">
+      <option name="closed" value="true" />
+      <created>1744753561887</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1744753561887</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added&#10;- chack for minimum form">
+      <option name="closed" value="true" />
+      <created>1744755441950</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1744755441950</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added&#10;- extra group support">
+      <option name="closed" value="true" />
+      <created>1744839190129</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1744839190129</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added Extra test">
+      <option name="closed" value="true" />
+      <created>1744839565857</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1744839565857</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Fixed ? in SmartRegExp custom groups&#10;Updated readme.md">
+      <option name="closed" value="true" />
+      <created>1744840811312</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1744840811312</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added&#10;- outputs identical to inputs">
+      <option name="closed" value="true" />
+      <created>1745187065972</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1745187065972</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Files moved">
+      <option name="closed" value="true" />
+      <created>1745187133079</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1745187133079</updated>
+    </task>
+    <task id="LOCAL-00016" summary="grammar check">
+      <option name="closed" value="true" />
+      <created>1745187808232</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1745187808232</updated>
+    </task>
+    <task id="LOCAL-00017" summary="- added icon&#10;- updated readme.md">
+      <option name="closed" value="true" />
+      <created>1745191471132</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1745191471132</updated>
+    </task>
+    <task id="LOCAL-00018" summary="- added more samples&#10;- reogranization of the files&#10;- set match_type to strict (S)&#10;- set visibility to Enable with Input, User Output and Expected Output (2)">
+      <option name="closed" value="true" />
+      <created>1745227694263</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1745227694263</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Added final sample&#10;Fixed bugs">
+      <option name="closed" value="true" />
+      <created>1745232677587</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1745232677587</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Added final sample&#10;Fixed bugs">
+      <option name="closed" value="true" />
+      <created>1745232726965</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1745232726965</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Added final sample&#10;Fixed bugs">
+      <option name="closed" value="true" />
+      <created>1745232733453</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1745232733453</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Added final samples&#10;Bug Fixes (default file separator)">
+      <option name="closed" value="true" />
+      <created>1745232844895</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1745232844895</updated>
+    </task>
+    <task id="LOCAL-00023" summary="final samples">
+      <option name="closed" value="true" />
+      <created>1745233341112</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1745233341112</updated>
+    </task>
+    <task id="LOCAL-00024" summary="RegExp are generated in the stream">
+      <option name="closed" value="true" />
+      <created>1746117163326</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1746117163326</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Updated structure&#10;- now in otg.JSON&#10;- more documentation&#10;- restructuralization&#10;&#10;- extra code for samples&#10;&#10;TODO: Document FX Controller&#10;NOT DOING&#10;- try clean even more code with threads, and puting BuilderConnection.java as a Singlton, to get the values to Main, and do all the thing i now do in FinalBuilder.java in Main">
+      <option name="closed" value="true" />
+      <created>1746130156088</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1746130156088</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Updated structure&#10;- now in otg.JSON&#10;- more documentation&#10;- restructuralization&#10;&#10;- extra code for samples&#10;&#10;TODO: Document FX Controller&#10;NOT DOING&#10;- try clean even more code with threads, and puting BuilderConnection.java as a Singlton, to get the values to Main, and do all the thing i now do in FinalBuilder.java in Main">
+      <option name="closed" value="true" />
+      <created>1746130164237</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1746130164237</updated>
+    </task>
+    <task id="LOCAL-00027" summary="readme update">
+      <option name="closed" value="true" />
+      <created>1746130308685</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1746130308685</updated>
+    </task>
+    <task id="LOCAL-00028" summary="update Controller">
+      <option name="closed" value="true" />
+      <created>1746140682356</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1746140682356</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Updated&#10;- styles.css&#10;- documentation&#10;&#10;Finalize">
+      <option name="closed" value="true" />
+      <created>1746142386333</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1746142386333</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Updated readme.md">
+      <option name="closed" value="true" />
+      <created>1746142763224</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1746142763224</updated>
+    </task>
+    <task id="LOCAL-00031" summary="- updated error messages&#10;- updated code structure&#10;- code that included Preferences is now more readable&#10;- fixed SmartFiles.java custom separator not working">
+      <option name="closed" value="true" />
+      <created>1746313729092</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1746313729092</updated>
+    </task>
+    <task id="LOCAL-00032" summary="- updated error messages&#10;- updated code structure&#10;- code that included Preferences is now more readable&#10;- fixed SmartFiles.java custom separator not working">
+      <option name="closed" value="true" />
+      <created>1746313762758</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1746313762758</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Added&#10;- created .json files now have a proper name">
+      <option name="closed" value="true" />
+      <created>1746385054825</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1746385054825</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Added&#10;- &quot;remove all files&quot; button (so you dont have to restart whole program each time)&#10;- cleand UI&#10;Removed&#10;- remove feature that removed empty strings from file input">
+      <option name="closed" value="true" />
+      <created>1746463163906</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1746463163906</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Added&#10;- &quot;remove all files&quot; button (so you dont have to restart whole program each time)&#10;- cleand UI&#10;- added extra samples&#10;Removed&#10;- remove feature that removed empty strings from file input">
+      <option name="closed" value="true" />
+      <created>1746463470604</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1746463470604</updated>
+    </task>
+    <task id="LOCAL-00036" summary="readme update">
+      <option name="closed" value="true" />
+      <created>1746463583479</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1746463583479</updated>
+    </task>
+    <task id="LOCAL-00037" summary="added executable">
+      <option name="closed" value="true" />
+      <created>1746517808487</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1746517808487</updated>
+    </task>
+    <task id="LOCAL-00038" summary="documentation update">
+      <option name="closed" value="true" />
+      <created>1747574716382</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1747574716382</updated>
+    </task>
+    <task id="LOCAL-00039" summary="documentation update">
+      <option name="closed" value="true" />
+      <created>1747574879158</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1747574879158</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Refactoring pt. V:&#10;- Main - now have values for setting test visibility/matching_sensitivity&#10;- updated readme.md&#10;- Updated documentation&#10;&#10;Small updates: &#10;- renaming classes&#10; - classes responsible and interacting with json are now named `MyJson...`&#10; - classes responsible with user intpu (regExp/Files) are now named `Collector...`&#10;- `BuilderConnection` - more clear code (private methods)&#10;- `ErrorHendelerOuter` - diferent error if its `RgxGenParseException`&#10;- `RegExpCollector` - removed one constructor">
+      <option name="closed" value="true" />
+      <created>1747843693923</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1747843693923</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Added&#10;- separet UI file manager&#10;- updated UI&#10;- added Window owners&#10;- more cleaning">
+      <option name="closed" value="true" />
+      <created>1747854719535</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1747854719535</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Added&#10;- separet UI file manager&#10;- updated UI&#10;- added Window owners&#10;- more cleaning">
+      <option name="closed" value="true" />
+      <created>1747854775566</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1747854775566</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="grammar check" />
+    <MESSAGE value="- added icon&#10;- updated readme.md" />
+    <MESSAGE value="- added more samples&#10;- reogranization of the files&#10;- set match_type to strict (S)&#10;- set visibility to Enable with Input, User Output and Expected Output (2)" />
+    <MESSAGE value="Added final sample" />
+    <MESSAGE value="Added final sample&#10;Bug fixes (with deafult separator)" />
+    <MESSAGE value="Added final sample&#10;Fixed bugs" />
+    <MESSAGE value="Added final samples&#10;Bug Fixes (default file separator)" />
+    <MESSAGE value="final samples" />
+    <MESSAGE value="RegExp are generated in the stream" />
+    <MESSAGE value="Updated structure&#10;- now in otg.JSON&#10;- more documentation&#10;- restructuralization" />
+    <MESSAGE value="Updated structure&#10;- now in otg.JSON&#10;- more documentation&#10;- restructuralization&#10;&#10;- extra code for samples&#10;&#10;TODO: Document FX Controller&#10;NOT DOING&#10;- try clean even more code with threads, and puting BuilderConnection.java as a Singlton, to get the values to Main, and do all the thing i now do in FinalBuilder.java in Main" />
+    <MESSAGE value="update Controller" />
+    <MESSAGE value="Updated&#10;- styles.css&#10;- documentation&#10;&#10;Finalize" />
+    <MESSAGE value="Updated readme.md" />
+    <MESSAGE value="- updated error messages&#10;- updated code structure&#10;- code that included Preferences is now more readable&#10;- fixed SmartFiles.java custom separator not working" />
+    <MESSAGE value="Added&#10;- created .json files now have a proper name" />
+    <MESSAGE value="Added&#10;- &quot;remove all files&quot; button (so you dont have to restart whole program each time)&#10;- cleand UI&#10;Removed&#10;- remove feature that removed empty strings from file input" />
+    <MESSAGE value="Added&#10;- &quot;remove all files&quot; button (so you dont have to restart whole program each time)&#10;- cleand UI&#10;- added extra samples&#10;Removed&#10;- remove feature that removed empty strings from file input" />
+    <MESSAGE value="readme update" />
+    <MESSAGE value="added executable" />
+    <MESSAGE value="documentation update" />
+    <MESSAGE value="Refactoring pt. V:&#10;- Main - now have values for setting test visibility/matching_sensitivity&#10;- updated readme.md&#10;- Updated documentation&#10;&#10;Small updates: &#10;- renaming classes&#10; - classes responsible and interacting with json are now named `MyJson...`&#10; - classes responsible with user intpu (regExp/Files) are now named `Collector...`&#10;- `BuilderConnection` - more clear code (private methods)&#10;- `ErrorHendelerOuter` - diferent error if its `RgxGenParseException`&#10;- `RegExpCollector` - removed one constructor" />
+    <MESSAGE value="Added&#10;- separet UI file manager&#10;- added Window owners&#10;- more cleaning" />
+    <MESSAGE value="Added&#10;- separet UI file manager&#10;- huge refactoring in `MainMenuController`&#10;- updated UI&#10;- added Window owners&#10;- more cleaning" />
+    <MESSAGE value="Added&#10;- separet UI file manager&#10;- updated UI&#10;- added Window owners&#10;- more cleaning" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added&#10;- separet UI file manager&#10;- updated UI&#10;- added Window owners&#10;- more cleaning" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <dependency id="0" />
+          <url>file://$PROJECT_DIR$/src/test/java/cz/vscht/bioinformatics/kolar/onlinegdbclassroom/testbuilder/TextRegExpBasedTest.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="macher.matches()" language="JAVA" />
+        <watch expression="text" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

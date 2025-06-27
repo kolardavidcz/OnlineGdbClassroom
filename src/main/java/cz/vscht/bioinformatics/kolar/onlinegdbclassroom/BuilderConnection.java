@@ -34,6 +34,7 @@ public class BuilderConnection {
     private TestCollector outputs;
 
     private ArrayList<String> testInputs;
+    private Optional<List<String>> testNames;
     private boolean outputsIdenticalAsInputs;
 
     private final String regexTab = EnumTabOpened.REG_EXP.getDisplayName();
@@ -98,9 +99,20 @@ public class BuilderConnection {
         this.name = name;
         this.htmlText = htmlText;                       // Raw HTML content  - purified later in MyJsonFormatBuilder
         this.codeTemplate = UIcodeTemplateTextArea;     // Raw template code - purified later in MyJsonFormatBuilder
+        if(UIcodeTemplateTextArea.isEmpty()) {
+            this.codeTemplate = """
+                    #include <stdio.h>
+                    #include <stdlib.h>
+                    
+                    int main ( int argc, char * argv [] ) {
+                        //TODO
+                        return 0;
+                    }""";
+        }
         this.modalSolution = UImodalSolutionTextArea;   // Raw solution code - purified later in FormatBuilder
 
         testInputs = null;                              // Changed if getInputs was called
+        testNames = Optional.empty();
 
         // Convert and validate programming language
         this.programmingLanguage = ProgrammingLanguage.getProgramingLanguageEnum(programmingLanguage);
@@ -118,6 +130,7 @@ public class BuilderConnection {
 
             Optional<String> inputSeparator = getCustomSeparator(UIEnableCustomInputSeparator, UIFileCustominputSeperator);
             input = new FilesCollector(UIinputTextFiles, UIAutoCleaninput, inputSeparator);
+            testNames = Optional.of(input.getFileNames()); //set test names
         }
 
         // OUTPUT source based on selected tab
@@ -128,6 +141,7 @@ public class BuilderConnection {
                 
                 int outputRegExAmout = purifyNumbers(UIOutputRegExAmout);
                 outputs = new RegExpCollector(UIOutputRegEx, outputRegExAmout);
+
             } else {
                 //REDUNDENT data to an output array will be copied from input array
             }
@@ -136,6 +150,10 @@ public class BuilderConnection {
 
             Optional<String> outputSeparator = getCustomSeparator(UIEnableCustomOutputSeparator, UIFileCustomOutputSeperator);
             outputs = new FilesCollector(UIoutputTextFiles, UIAutoCleanOutput, outputSeparator);
+
+            if(testNames.isEmpty()) { //set test names
+                testNames = Optional.of(outputs.getFileNames());
+            }
         }
     }
 
@@ -192,5 +210,12 @@ public class BuilderConnection {
             return Optional.of(separator);
         }
         return Optional.empty();
+    }
+
+    public Optional<List<String>> getTestNames() {
+        if (testNames == null || testNames.isEmpty()) {
+            return Optional.empty();
+        }
+        return Optional.of(new ArrayList<String>(testNames.get()));
     }
 }

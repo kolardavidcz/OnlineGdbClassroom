@@ -12,8 +12,6 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.web.HTMLEditor;
 import javafx.util.Duration;
-import org.json.JSONObject;
-
 import java.io.*;
 import java.net.URL;
 import java.util.*;
@@ -195,7 +193,7 @@ public class MainMenuController implements Initializable {
             /* Code samples*/               codeTemplateTextArea.getText(), modalSolutionTextArea.getText());
 
             FinalBuilder finalBuilder = new FinalBuilder(builderConnection);
-            JSONObject jsonObject = finalBuilder.process();
+            Map<String, Object> jsonObject = finalBuilder.process();
 
             File saveDirectory = UIFileManager.setJsonFileDestination();
 

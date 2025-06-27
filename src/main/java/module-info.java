@@ -4,7 +4,7 @@ module cz.vscht.bioinformatics.kolar.onlinegdbclassroom {
     requires org.jsoup;
     requires javafx.web;
     requires rgxgen;
-    requires org.json;
+    requires com.fasterxml.jackson.databind;
 
     exports cz.vscht.bioinformatics.kolar.onlinegdbclassroom.ui;
     opens cz.vscht.bioinformatics.kolar.onlinegdbclassroom.ui to javafx.fxml;

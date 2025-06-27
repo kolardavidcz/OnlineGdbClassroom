@@ -78,6 +78,11 @@ public class RegExpCollector extends TestCollector {
                 .collect(Collectors.toCollection(ArrayList::new));
     }
 
+    @Override
+    public List<String> getFileNames() {
+        throw new IllegalArgumentException("RegExpCollector does not support getFileNames() method.");
+    }
+
     /**
      * Replaces special group placeholders with random values from corresponding files.
      *
